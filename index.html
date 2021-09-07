@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gym bro</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="img/man2.jpg" width="200" height= "200" alt="healthy adult male">
+      Gym Bros
+      <img src="img/man.jpg" width="200" height= "200"  alt="healthy man">
+    </div>
+    <div class="container">
+      <p>
+        Please fill out the following Information to register for Gym Bros so you can start workingout with your bros
+      </p>
+      <form class="registration" action="https://benjdd.com/sp" method="post">
+        <label for="firstname">First name:</label>
+        <input type="text" name="firstname" required>
+        <br>
+        <label for="lastname">Last name:</label>
+        <input type="text" name="lastname" required>
+        <br>
+        <label for="email">Primary email:</label>
+        <input type="email" name="email" required>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" pattern=".{8,}" required>
+        <br>
+        <label for="recoveryEmail">Recovery Email:</label>
+        <input type="email" name="recoveryEmail">
+        <br>
+        <label for="phonenumber">Phone number (XXX-XXXX):</label>
+        <input type="tel" name="phonenumber" pattern="[0-9]{3}-[0-9]{4}">
+        <br>
+        <label for="weight">Weight (lbs):</label>
+        <input type="number" name="weight">
+        <br>
+        <label for="bio">Bio:</label>
+        <textarea name="bio" rows="3" cols="80"></textarea>
+        <br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday">
+        <br>
+        <div class="newsletterDiv">
+          Sign up for newsletter?
+          <br>
+          <label for="yes">Yes</label>
+          <input type="radio" name="newsletter" value="yes" required>
+          <label for="no">No</label>
+          <input type="radio" name="newsletter" value="no" required>
+          <br>
+        </div>
+        <label for="satisfaction">Satisfaction with company(1-10):</label>
+        <input type="range" name="satisfaction" min="1" max="10" value="5" required>
+        <br>
+        <input id="sub" type="submit" name="submit" value="register">
+      </form>
+    </div>
+  </body>
+</html>
